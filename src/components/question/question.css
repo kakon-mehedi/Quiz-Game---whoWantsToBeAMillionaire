@@ -1,0 +1,112 @@
+:root {
+    --primary-color: #02093f;
+    --secondary-color: green;
+  }
+
+.quiz-bottom {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.quiz-question {
+  border: 1px solid white;
+  padding: 10px;
+  font-weight: 300;
+  border-radius: 5px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 1, 79, 0.665),
+    var(--primary-color)
+  );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.question-text{
+    font-size: 32px;
+}
+
+.quiz-option-list {
+  justify-content: center;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quiz-option {
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  border: 0.1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(50, 50, 158, 0.824),
+    rgb(9, 9, 32)
+  );
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.quiz-option:hover {
+  background: linear-gradient(rgba(0, 0, 255, 0.31), rgb(5, 5, 140));
+}
+
+.quiz-option.correct {
+  animation-name: correct-answer-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.quiz-option.wrong {
+  animation-name: wrong-answer-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes correct-answer-animation {
+  0%,20%,40%{
+    background: linear-gradient(to bottom, green, black);
+  }
+
+  10%,30%,50%,70%,90%{
+    background: linear-gradient(to bottom, rgb(5, 7, 5), black);
+  }
+
+  60%,80% {
+    background: linear-gradient(rgb(228, 249, 0), black);
+  }
+
+  100% {
+    background: linear-gradient(rgb(53, 148, 16), black);
+  }
+}
+
+@keyframes wrong-answer-animation {
+    0%,20%,40%{
+        background: linear-gradient(to bottom, green, black);
+      }
+    
+      10%,30%,50%,70%,90%{
+        background: linear-gradient(to bottom, rgb(5, 7, 5), black);
+      }
+    
+      60%,80% {
+        background: linear-gradient(rgb(228, 249, 0), black);
+      }
+    
+      100% {
+        background: linear-gradient(rgb(255, 106, 0), black);
+      }
+}
