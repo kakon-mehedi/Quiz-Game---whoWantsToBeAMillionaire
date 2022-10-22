@@ -1,127 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 :root {
-    --primary-color: #02093f;
-    --secondary-color: green;
-  }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  --primary-color: rgba(0, 0, 0, 0.513);
+  --secondary-color: green;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    color: lightgray;
-    position: relative;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-container{
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(28, 1, 1, 0.227), var(--primary-color)), url('/public/assets/bg.jpg') center/cover no-repeat;
-    display: flex;
-    
+body {
+  font-family: "Roboto", sans-serif;
+  color: lightgray;
+  position: relative;
 }
 
-.score-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(49, 41, 41), rgba(0, 0, 0, 0.569)),
+    url("/public/assets/bg.jpg") center/cover no-repeat;
+  display: flex;
 }
 
-.play-again-btn{
-    background-color: blue;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 40px;
-    width: 300px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+.score-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-.you-earned{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    margin-bottom: 100px;
-    
+.play-again-btn {
+  background-color: rgba(185, 88, 71, 0.548);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 40px;
+  width: 300px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.quiz-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 75%;
-    margin-left: 80px;
-    bottom: 20px;
+.you-earned {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  margin-bottom: 100px;
 }
 
-.quiz-top{
-    height: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin-left: 80px;
+  bottom: 20px;
 }
 
-
-.money-section{
-    width: 25%;
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.quiz-top {
+  height: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.money-container{
-    width: 100%;
-    padding: 20px;
-   
+.money-section {
+  width: 25%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.money{
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-   
+.money-container {
+  width: 100%;
+  padding: 20px;
 }
 
-.question-number{
-    width: 30%;
-    font-weight: 100;
+.money {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.answer-amount{
-   font-size: 20px;
-   font-weight: 300;
+.question-number {
+  width: 30%;
+  font-weight: 100;
 }
 
-.active{
-    background-color: teal;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.answer-amount {
+  font-size: 20px;
+  font-weight: 300;
 }
 
+.active {
+  background-color: rgba(166, 26, 26, 0.662);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
