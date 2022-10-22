@@ -1,17 +1,17 @@
-.timer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: 500;
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    border: 5px solid white;
-    background: linear-gradient(to bottom, black, rgb(5, 5, 183));
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 500;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border: 5px solid white;
+  background: linear-gradient(0deg, black, rgba(255, 0, 0, 0.53));
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
