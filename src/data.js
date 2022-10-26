@@ -19,44 +19,44 @@ export const moneyAmount = [
 export const quizData = [
   {
     id: 1,
-    question: "Rolex is a company that specializes in what type of product?",
+    question: "How many values can a single byte represent?",
     answers: [
       {
-        text: "Phone",
+        text: "8",
         correct: false,
       },
       {
-        text: "Watches",
+        text: "256",
         correct: true,
       },
       {
-        text: "Food",
+        text: "1",
         correct: false,
       },
       {
-        text: "Cosmetic",
+        text: "1024",
         correct: false,
       },
     ],
   },
   {
     id: 2,
-    question: "When did the website `Facebook` launch?",
+    question: "What does the computer software acronym JVM stand for?",
     answers: [
       {
-        text: "2004",
+        text: "Java Virtual Machine",
         correct: true,
       },
       {
-        text: "2005",
+        text: "Java Vendor Machine",
         correct: false,
       },
       {
-        text: "2006",
+        text: "Java Visual Machine",
         correct: false,
       },
       {
-        text: "2007",
+        text: "Just Virtual Machine",
         correct: false,
       },
     ],
@@ -79,6 +79,29 @@ export const quizData = [
       },
       {
         text: "Daniel Red Cliff",
+        correct: true,
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    question: "What is the hottest planet in the Solar System??",
+    answers: [
+      {
+        text: "Mars",
+        correct: false,
+      },
+      {
+        text: "Mercury",
+        correct: false,
+      },
+      {
+        text: "Jupiter",
+        correct: false,
+      },
+      {
+        text: "Venus",
         correct: true,
       },
     ],
